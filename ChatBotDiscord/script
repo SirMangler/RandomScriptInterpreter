@@ -1,0 +1,33 @@
+[arrays]
+me = you;yourself;robot
+insults = fuck;idiot;stupid;ass;cunt;retard;broken;faggot;fag;inept;jerk;dunce;cretin;spastic;twat;imbecile;dumb
+greetings = hello;hey;yo;sup;howdy;greetings;hi;hiya;hola;ola
+
+[synon] 
+your = you're
+is = are
+
+[hello]
+structure = %greetings
+outputs = %greetings &p!
+weight = 1
+
+[your]
+structure = your;you're;ur
+outputs = Why do you think I am (1);(1) isn't what I am.
+weight = 1
+
+[yourinsult]
+structure = your %insults;you're %insults;ur
+outputs = no u.;you're %insults;you're the (1);(1) is a better suited title for you.
+weight = 2
+
+[how]
+structure = how are &bot
+outputs = I am sufficient.;I am running.
+weight = 1
+
+[insults]
+structure = %insults
+outputs = no u.;you're %insults
+weight: 2
